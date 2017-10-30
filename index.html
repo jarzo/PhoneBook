@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="js/contacts.js"></script>
+	<script src="js/knockout-2.3.0.js"></script>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	<link rel="stylesheet" href="css/style.css" rel="stylesheet" media="all" />
+	<title>Adress Book</title>
+</head>
+
+<body>
+	<div class="okienka">
+		<div class="okienko-dodawania">
+			<h3>Imie</h3>
+			<input id="dodajImie" type="text">
+			<h3>Nazwisko</h3>
+			<input id="dodajNazwisko" type="text">
+			<h3>Telefon</h3>
+			<input id="dodajTelefon" type="tel">
+			<h3>Adres</h3>
+			<input id="dodajAdres" type="text">
+			<div class="przyciski">
+				<button class="przycisk dodaj" data-bind="click:okClicked">Dodaj</button>
+				<button class="przycisk anuluj" data-bind="click:cancelClicked">Anuluj</button>
+			</div>
+		</div>
+		<div class="okienko-edytowania">
+			<h3>Imie</h3>
+			<input id="dodajImie" type="text">
+			<h3>Nazwisko</h3>
+			<input id="dodajNazwisko" type="text">
+			<h3>Telefon</h3>
+			<input id="dodajTelefon" type="tel">
+			<h3>Adres</h3>
+			<input id="dodajAdres" type="text">
+			<div class="przyciski">
+				<button class="przycisk zapisz" data-bind="click:saveClicked">Zapisz</button>
+				<button class="przycisk anuluj" data-bind="click:cancelClicked">Anuluj</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
