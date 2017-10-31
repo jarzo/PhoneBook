@@ -6,42 +6,72 @@
 	<script src="js/contacts.js"></script>
 	<script src="js/knockout-2.3.0.js"></script>
 	<script src="js/jquery-2.0.3.min.js"></script>
-	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" rel="stylesheet" media="all" />
 	<title>Adress Book</title>
 </head>
 
 <body>
-	<div class="okienka">
-		<div class="okienko-dodawania">
+	<div id="okienka">
+		<div id="okienko-dodawania">
 			<h3>Imie</h3>
-			<input id="dodajImie" type="text">
+			<input class="dodajImie" type="text">
 			<h3>Nazwisko</h3>
-			<input id="dodajNazwisko" type="text">
+			<input class="dodajNazwisko" type="text">
 			<h3>Telefon</h3>
-			<input id="dodajTelefon" type="tel">
+			<input class="dodajTelefon" type="tel">
 			<h3>Adres</h3>
-			<input id="dodajAdres" type="text">
+			<input class="dodajAdres" type="text">
 			<div class="przyciski">
-				<button class="przycisk dodaj" data-bind="click:okClicked">Dodaj</button>
-				<button class="przycisk anuluj" data-bind="click:cancelClicked">Anuluj</button>
+				<button class="przycisk-dodaj" data-bind="">Dodaj</button>
+				<button class="przycisk-anuluj" data-bind="">Anuluj</button>
 			</div>
 		</div>
-		<div class="okienko-edytowania">
+		<div id="okienko-edytowania">
 			<h3>Imie</h3>
-			<input id="dodajImie" type="text">
+			<input class="dodajImie" type="text">
 			<h3>Nazwisko</h3>
-			<input id="dodajNazwisko" type="text">
+			<input class="dodajNazwisko" type="text">
 			<h3>Telefon</h3>
-			<input id="dodajTelefon" type="tel">
+			<input class="dodajTelefon" type="tel">
 			<h3>Adres</h3>
-			<input id="dodajAdres" type="text">
+			<input class="dodajAdres" type="text">
 			<div class="przyciski">
-				<button class="przycisk zapisz" data-bind="click:saveClicked">Zapisz</button>
-				<button class="przycisk anuluj" data-bind="click:cancelClicked">Anuluj</button>
+				<button class="przycisk-zapisz" data-bind="">Zapisz</button>
+				<button class="przycisk-anuluj" data-bind="">Anuluj</button>
 			</div>
 		</div>
 	</div>
+	<div class="ksiazkatel">
+	<h1>Książka Telefoniczna</h1>
+		<div class="lewa-strona">
+			<div class="wyszukaj">
+				<input id="polewyszukaj" value="Wyszukaj..." type="text">
+				<button class="przycisk-wyszukaj" data-bind="">Wyszukaj</button>
+			</div>
+			<div class="lista-kontaktow">
+				<div class="naglowek-kontaktow">Kontakty</div>
+				<ul class="lista" data-bind="">
+					<li class="kontakt" data-bind=""></li>
+				</ul>
+			</div>
+			<div class="dolne-przyciski">
+				<button class="add button" data-bind="">Dodaj</button>
+				<button class="edit button" data-bind="">Edytuj</button>
+				<button class="remove button" data-bind="">Usuń</button>
+			</div>
+		</div>
+		<div class="prawa-strona">
+			<div class="dane">
+				<p>Imie: <span data-bind=""></span></p>
+				<p>Nazwisko: <span data-bind=""></span></p>
+				<p>Telefon: <span data-bind=""></span></p>
+				<p>Adres: <span data-bind=""></span></p>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	color:darkred;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+select{
+	width: 100%;
+	padding-left: 5px;
+	background-color:#ccc;
+}
+.selected{
+	color: red;
+}
+.okienka{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(39,39,35,0.7);
+	z-index: 1001;
+}
+
+#okienko-dodawania, #okienko-edytowania{
+	display: none;
+	margin: 100px auto;
+	padding: 10px;
+	width: 300px;
+	min-height: 150px;
+	z-index: 1;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+#okienko-dodawania input, #okienko-edytowania input{
+	display: block;
+	margin: 5px 30px;
+	width: 240px;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+#okienko-dodawania input:focus, #okienko-edytowania input:focus{
+	background-color: #bbb;
+	border:1px solid red;
+}
+
+#okienko-dodawania h3, #okienko-edytowania h3{
+	margin-top: 5px;
+	margin-left: 30px;
+	font-size: 15px;
+}
+
+#okienko-dodawania .przyciski, #okienko-edytowania .przyciski{
+	margin: 15px auto;
+	width: 125px;
+	height: 50px;
+}
+
+.ksiazkatel{
+	margin: 50px auto;
+	width: 80%;
+	height: 80vh;
+	background-color: #000;
+	border-radius: 25px;
+}
+
+.ksiazkatel h1{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+li.contact.selected{
+	background-color: #aaa;
+	transition: all .3s;
+}
+li.contact.selected{
+	background-color: #ccc;
+}
+
+.lewa-strona{
+	float: left;
+	width: 40%;
+	height: 70vh;
+	background-color: #bbb;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+.wyszukaj{
+	height: 50px;
+	border-bottom: 1px solid darkred;
+}
+.lista-kontaktow{
+	height: 55vh;
+}
+
+.dolne-przyciski{
+	background-color: #aaa;
+	height: 65px;
+	border-radius: 5px;
+}
+.wyszukaj input{
+	float:left;
+	width:350px;
+	height:25px;
+	margin:10px 5px;
+	border-radius:5px;
+	padding:0 10px;
+	line-height:20px;
+	color:#cccccc;
+	transition: all .3s;
+}
+.wyszukaj input:focus{
+	color: #000;
+}
+
+
+.wyszukaj button{
+	width:120px;
+	height:25px;
+	margin:10px 6px;
+	float:right;
+	background: #fff;
+	border-radius:5px;
+	text-transform:lowercase;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;;
+}
+
+.wyszukaj button:hover{
+	background-color: #333;
+}
+
+.wyszukaj button:active{
+	background-color: darkred;
+	color:#000;
+}
+
+.naglowek-kontaktow{
+	padding: 5px 10px;
+	height:30px;
+	background:#333;
+	font-weight:bold;
+	text-align: center;
+	font-size: 18px;
+}
+
+ul.lista{
+	height: 55vh;
+	overflow: auto;
+}
+li.kontakt{
+	padding: 0 10px;
+	display:block;
+	height:40px;
+	background-color:#bbb;
+	line-height:40px;
+	font-weight:bold;
+	color:#000;
+	cursor:pointer;
+	transition: all .3s;
+}
+
+li.kontakt:hover{
+	background-color: #ccc;
+	color:#444;
+}
+#scroll-list{
+	height: 55vh;
+}
+
+.button{
+	width:100px;
+	height:30px;
+	background:#fff;
+	border-radius:10px;
+	display:inline-block;
+	font-size: 12px;
+	cursor:pointer;
+	text-align:center;
+	line-height:30px;
+	text-transform:uppercase;
+	font-weight:bold;
+	transition: all .3s;
+}
+.button:hover{
+	background-color: #000;
+}
+.add, .remove,.edit{
+	margin:15px 30px 15px 30px;
+}
+
+.prawa-strona{
+	text-align: left;
+	width:610px;
+	height:400px;
+	margin-top: 20px;
+	margin-left: 550px;
+	border-radius: 3px;
+	}
